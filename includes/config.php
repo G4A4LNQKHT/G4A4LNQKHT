@@ -36,7 +36,7 @@ define('DB_CHARSET', 'utf8mb4');
 // URL gốc của website
 define('BASE_URL', 'https://g4a4.qzz.io/');
 define('SITE_NAME', 'Tổ 4 - Lớp A4');
-define('ADMIN_EMAIL', 'admin@g4a4.local');
+define('ADMIN_EMAIL', 'admin@g4a4.qzz.io');
 
 // Thư mục upload
 define('UPLOAD_DIR', __DIR__ . '/../public_html/uploads/');
