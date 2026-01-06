@@ -148,4 +148,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 });
 </script>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

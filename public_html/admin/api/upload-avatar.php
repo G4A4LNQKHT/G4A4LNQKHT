@@ -43,7 +43,7 @@ $filename = 'avatar_' . $userId . '_' . time() . '.' . $ext;
 $filepath = $uploadsDir . '/' . $filename;
 
 if (move_uploaded_file($file['tmp_name'], $filepath)) {
-    $avatarUrl = BASE_URL . '/uploads/avatars/' . $filename;
+    $avatarUrl = BASE_URL . 'uploads/avatars/' . $filename;
     
     // Update database
     $db->query("UPDATE users SET avatar = '" . $db->real_escape_string($avatarUrl) . "' WHERE id = $userId");

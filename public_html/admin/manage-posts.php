@@ -5,7 +5,7 @@ require_once '../includes/db.php';
 
 // Check admin permission
 if (!isAdmin()) {
-    header('Location: ' . BASE_URL . '/login.php');
+    header('Location: ' . BASE_URL . 'login.php');
     exit;
 }
 

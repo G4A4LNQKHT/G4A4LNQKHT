@@ -7,7 +7,7 @@ require_once 'includes/db.php';
 $userId = isset($_GET['id']) ? (int)$_GET['id'] : (isLoggedIn() ? $_SESSION['user_id'] : null);
 
 if (!$userId) {
-    header('Location: ' . BASE_URL . '/login.php');
+    header('Location: ' . BASE_URL . 'login.php');
     exit;
 }
 
@@ -19,7 +19,7 @@ $userResult = $stmt->get_result();
 $user = $userResult ? $userResult->fetch_assoc() : null;
 
 if (!$user) {
-    header('Location: ' . BASE_URL . '/members.php');
+    header('Location: ' . BASE_URL . 'members.php');
     exit;
 }
 
@@ -222,4 +222,4 @@ include 'includes/header.php';
     </script>
 <?php endif; ?>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

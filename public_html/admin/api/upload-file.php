@@ -39,7 +39,7 @@ $filename = 'file_' . time() . '_' . rand(1000, 9999) . '.' . $ext;
 $filepath = $uploadsDir . '/' . $filename;
 
 if (move_uploaded_file($file['tmp_name'], $filepath)) {
-    $fileUrl = BASE_URL . '/uploads/files/' . $filename;
+    $fileUrl = BASE_URL . 'uploads/files/' . $filename;
     
     // Save to database
     $title = $db->real_escape_string($title);

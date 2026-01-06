@@ -5,7 +5,7 @@ require_once 'includes/db.php';
 
 // Only for logged in users
 if (!isLoggedIn()) {
-    header('Location: ' . BASE_URL . '/login.php');
+    header('Location: ' . BASE_URL . 'login.php');
     exit;
 }
 
@@ -229,4 +229,4 @@ include 'includes/header.php';
     </script>
 <?php endif; ?>
 
-<?php include 'includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
